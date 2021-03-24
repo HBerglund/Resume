@@ -3,7 +3,6 @@ import {
   IconButton,
   makeStyles,
   Typography,
-  useTheme,
 } from "@material-ui/core";
 import profileImg from "../assets/profile.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -13,13 +12,8 @@ function ProfileCard() {
   const useStyles = makeStyles(() =>
     createStyles({
       root: {
-        position: "absolute",
-        top: "-75%",
-        left: 0,
-        right: 0,
-        marginLeft: "auto",
-        marginRight: "auto",
         width: "15rem",
+        margin: "-15rem 1rem 0 1rem",
       },
       wrapper: {
         width: "15rem",
@@ -35,7 +29,6 @@ function ProfileCard() {
       },
     })
   );
-  const theme = useTheme();
   const classes = useStyles();
 
   return (
@@ -48,16 +41,10 @@ function ProfileCard() {
         <Typography variant="body1">Aspiring Front End Developer</Typography>
         <div style={{ marginBottom: ".5rem" }}>
           <IconButton>
-            <GitHubIcon
-              fontSize="large"
-              style={{ color: theme.palette.secondary.main }}
-            />
+            <GitHubIcon fontSize="large" style={{ color: "#bd93f9" }} />
           </IconButton>
           <IconButton disableFocusRipple>
-            <LinkedInIcon
-              fontSize="large"
-              style={{ color: theme.palette.secondary.main }}
-            />
+            <LinkedInIcon fontSize="large" style={{ color: "#bd93f9" }} />
           </IconButton>
         </div>
       </div>

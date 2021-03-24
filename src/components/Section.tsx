@@ -15,7 +15,6 @@ const Section: React.FC<Props> = ({ children }) => {
     createStyles({
       section: {
         padding: matchesMd ? "4rem" : "2rem" && matchesSm ? "2rem" : "0.8rem",
-        overflow: "hidden",
       },
     })
   );

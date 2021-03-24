@@ -1,10 +1,5 @@
-import {
-  createStyles,
-  makeStyles,
-  Typography,
-  useTheme,
-} from "@material-ui/core";
-import React from "react";
+import { createStyles, makeStyles, Typography } from "@material-ui/core";
+import ProfileCard from "./ProfileCard";
 
 function PersonalInfo() {
   const useStyles = makeStyles(() =>
@@ -16,7 +11,6 @@ function PersonalInfo() {
       },
     })
   );
-  const theme = useTheme();
   const classes = useStyles();
 
   return (
@@ -32,6 +26,7 @@ function PersonalInfo() {
         starting to enjoy coding and I can't wait to bring my new found skills
         out in the working life!
       </Typography>
+      <ProfileCard />
       <Typography style={{ width: "40%" }}>
         My name is Herman Berglund and I'm an aspiring Front End Developer with
         a Project Manager background in the same field. Currently, I am based in

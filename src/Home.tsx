@@ -1,20 +1,14 @@
-import classes from "*.module.css";
 import { createStyles, makeStyles, useTheme } from "@material-ui/core";
 import React from "react";
-import ProfileCard from "./components/ProfileCard";
+import PersonalInfo from "./components/PersonalInfo";
 import Section from "./components/Section";
-import StartPageContainer from "./components/StartPageContainer";
 
 function Home() {
   const useStyles = makeStyles(() =>
     createStyles({
       root: {
-        height: "100vh",
-        display: "flex",
-        alignItems: "flex-end",
-      },
-      wrapper: {
-        position: "relative",
+        backgroundColor: theme.palette.primary.main,
+        marginTop: "15rem",
       },
     })
   );
@@ -24,10 +18,7 @@ function Home() {
   return (
     <div className={classes.root}>
       <Section>
-        <div className={classes.wrapper}>
-          <ProfileCard />
-          <StartPageContainer />
-        </div>
+        <PersonalInfo />
       </Section>
     </div>
   );
