@@ -7,6 +7,9 @@ import {
   useTheme,
 } from "@material-ui/core";
 import Title from "./Title";
+import { jobs } from "../exports.js";
+import PersonalExperience from "./PersonalExperience";
+import Projects from "./Projects";
 
 function Experience() {
   const theme = useTheme();
@@ -16,12 +19,15 @@ function Experience() {
   const useStyles = makeStyles(() =>
     createStyles({
       root: {
-        alignItems: "center",
-        paddingTop: matchesMd
-          ? "4rem"
-          : "2rem" && matchesSm
-          ? "2rem"
-          : "0.8rem",
+        padding: "2rem 0",
+      },
+      wrapper: {
+        display: "flex",
+        flexDirection: matchesMd ? "row" : "column",
+        width: "100%",
+      },
+      widthWrapper: {
+        width: matchesMd ? "60%" : "100%",
       },
     })
   );
@@ -29,21 +35,12 @@ function Experience() {
 
   return (
     <div className={classes.root}>
-      <div>
-        <Title title="Experience" />
-      </div>
-      <Typography variant="h5">Work experience</Typography>
-      <div>
-        <Typography>Project Manager / Digital Producer</Typography>
-        <Typography>Small Mutiples - Sydney, Australia</Typography>
-        <Typography>Nov 2018 - Aug 2020</Typography>
-        <Divider light />
-      </div>
-      <div>
-        <Typography>Project Manager</Typography>
-        <Typography>Atea Sweden Ab - Vaxjo, Sweden</Typography>
-        <Typography>May 2017 – Okt 2018</Typography>
-        <Divider />
+      <Title title="Experience" />
+      <div className={classes.wrapper}>
+        <div className={classes.widthWrapper}>
+          <PersonalExperience />
+        </div>
+        <Projects />
       </div>
     </div>
   );

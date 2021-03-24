@@ -1,7 +1,7 @@
 import { createStyles, makeStyles, useTheme } from "@material-ui/core";
 import React from "react";
 import OneSecond from "./components/OneSecond";
-import PersonalContent from "./components/PersonalContent";
+import AboutMe from "./components/AboutMe";
 import Section from "./components/Section";
 import Experience from "./components/Experience";
 
@@ -21,7 +21,7 @@ function Home() {
   return (
     <div className={classes.root}>
       <Section>
-        <PersonalContent />
+        <AboutMe />
         <Experience />
         <OneSecond />
       </Section>

@@ -8,7 +8,7 @@ import {
 import ProfileCard from "./ProfileCard";
 import Title from "./Title";
 
-function PersonalContent() {
+function AboutMe() {
   const theme = useTheme();
   const matchesMd = useMediaQuery(theme.breakpoints.up("md"));
   const matchesSm = useMediaQuery(theme.breakpoints.up("sm"));
@@ -16,6 +16,7 @@ function PersonalContent() {
   const useStyles = makeStyles(() =>
     createStyles({
       root: {
+        padding: "2rem 0",
         display: "flex",
         flexDirection: matchesMd ? "row" : "column",
         alignItems: "center",
@@ -51,10 +52,8 @@ function PersonalContent() {
     return (
       <div className={classes.root}>
         <ProfileCard />
-        <div>
-          <Typography variant="h5" component="h2">
-            About me
-          </Typography>
+        <div style={{ marginTop: "1rem" }}>
+          <Title title="About me" />
           <Typography>
             My name is Herman Berglund and I'm an aspiring Front End Developer
             with a Project Manager background in the same field. Currently, I am
@@ -72,4 +71,4 @@ function PersonalContent() {
   }
 }
 
-export default PersonalContent;
+export default AboutMe;
