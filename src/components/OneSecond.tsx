@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 import Title from "./Title";
 import mobileIcon from "../assets/mobileIcon.png";
+import Iframe from "react-iframe";
 
 function OneSecond() {
   const theme = useTheme();
@@ -22,9 +23,15 @@ function OneSecond() {
         display: "flex",
         justifyContent: "center",
         marginTop: "1rem",
+        position: "relative",
       },
       mobileImg: {
         height: "500px",
+      },
+      oneSecondVideo: {
+        position: "absolute",
+        top: "12%",
+        height: "400px",
       },
     })
   );
@@ -43,6 +50,16 @@ function OneSecond() {
           src={mobileIcon}
           alt="mobile-phone"
         />
+        <Iframe
+          url="https://player.vimeo.com/video/528543521?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          width="640"
+          height="360"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          title="1second.mp4"
+          className={classes.oneSecondVideo}
+          frameBorder={0}
+        ></Iframe>
       </div>
     </div>
   );
