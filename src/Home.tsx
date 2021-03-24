@@ -1,7 +1,9 @@
 import { createStyles, makeStyles, useTheme } from "@material-ui/core";
 import React from "react";
-import PersonalInfo from "./components/PersonalInfo";
+import OneSecond from "./components/OneSecond";
+import PersonalContent from "./components/PersonalContent";
 import Section from "./components/Section";
+import Experience from "./components/Experience";
 
 function Home() {
   const useStyles = makeStyles(() =>
@@ -9,6 +11,7 @@ function Home() {
       root: {
         backgroundColor: theme.palette.primary.main,
         marginTop: "15rem",
+        color: "white",
       },
     })
   );
@@ -18,7 +21,9 @@ function Home() {
   return (
     <div className={classes.root}>
       <Section>
-        <PersonalInfo />
+        <PersonalContent />
+        <Experience />
+        <OneSecond />
       </Section>
     </div>
   );
