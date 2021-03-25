@@ -34,6 +34,10 @@ function ProfileCard() {
   const matchesSm = useMediaQuery(theme.breakpoints.up("sm"));
   const classes = useStyles();
 
+  const githubUrl: string = "https://github.com/hberglund";
+  const linkedInUrl: string =
+    "https://linkedin.com/in/herman-berglund-8b8939100";
+
   return (
     <div className={classes.root}>
       <div className={classes.wrapper}>
@@ -43,10 +47,10 @@ function ProfileCard() {
         </Typography>
         <Typography variant="body1">Aspiring Front End Developer</Typography>
         <div style={{ marginBottom: ".5rem" }}>
-          <IconButton>
+          <IconButton onClick={() => window.open(githubUrl, "_blank")}>
             <GitHubIcon fontSize="large" style={{ color: "#ff79c6" }} />
           </IconButton>
-          <IconButton disableFocusRipple>
+          <IconButton onClick={() => window.open(linkedInUrl, "_blank")}>
             <LinkedInIcon fontSize="large" style={{ color: "#ff79c6" }} />
           </IconButton>
         </div>

@@ -16,6 +16,7 @@ function AboutMe() {
   const useStyles = makeStyles(() =>
     createStyles({
       root: {
+        width: "100%",
         padding: "2rem 0",
         display: "flex",
         flexDirection: matchesMd ? "row" : "column",
@@ -23,7 +24,14 @@ function AboutMe() {
         color: "white",
         marginTop: matchesMd ? "0rem" : "3rem",
       },
-      title: {},
+      aboutMeWrapper: {
+        width: matchesMd ? "60%" : "100%",
+      },
+      profileCard: {
+        width: matchesMd ? "40%" : "100%",
+        display: "flex",
+        justifyContent: "center",
+      },
     })
   );
   const classes = useStyles();
@@ -31,7 +39,7 @@ function AboutMe() {
   if (matchesMd) {
     return (
       <div className={classes.root}>
-        <div>
+        <div className={classes.aboutMeWrapper}>
           <Title title="About me" />
           <Typography>
             My name is Herman Berglund and I'm an aspiring Front End Developer
@@ -45,7 +53,9 @@ function AboutMe() {
             to bring my new found skills out in the working life!
           </Typography>
         </div>
-        <ProfileCard />
+        <div className={classes.profileCard}>
+          <ProfileCard />
+        </div>
       </div>
     );
   } else {

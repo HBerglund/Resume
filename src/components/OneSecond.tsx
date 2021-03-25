@@ -22,16 +22,20 @@ function OneSecond() {
       mobileWrapper: {
         display: "flex",
         justifyContent: "center",
+        alignItems: "center",
         marginTop: "1rem",
         position: "relative",
       },
       mobileImg: {
-        height: "500px",
+        height: "567px",
+        marginLeft: "4px",
       },
       oneSecondVideo: {
         position: "absolute",
-        top: "12%",
-        height: "400px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        top: "13.5%",
+        height: "420px",
       },
     })
   );
@@ -52,9 +56,8 @@ function OneSecond() {
         />
         <Iframe
           url="https://player.vimeo.com/video/528713623?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          width="640"
-          height="360"
-          allow="autoplay; fullscreen; picture-in-picture"
+          width="360"
+          height="640"
           allowFullScreen
           title="1second.mp4"
           className={classes.oneSecondVideo}
