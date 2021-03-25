@@ -17,3 +17,7 @@ export function formatDate(dateString) {
   }
   return dateString;
 }
+
+export function formatName(nameString) {
+  return (nameString = nameString.substring(10));
+}

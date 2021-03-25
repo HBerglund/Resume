@@ -27,7 +27,7 @@ function PersonalExperience() {
       <Title title="Work experience" subTitle />
       {jobs.map(({ role, location, period }) => (
         <div style={{ padding: "0 0 1rem 1rem" }}>
-          <Typography>{role}</Typography>
+          <Typography style={{ fontWeight: "bold" }}>{role}</Typography>
           <Typography>{location}</Typography>
           <Typography>{period}</Typography>
         </div>
@@ -35,7 +35,9 @@ function PersonalExperience() {
       <Divider classes={{ root: classes.divider }} />
       <Title title="Education" subTitle />
       <div style={{ padding: "0 0 1rem 1rem" }}>
-        <Typography>Front End Developer</Typography>
+        <Typography style={{ fontWeight: "bold" }}>
+          Front End Developer
+        </Typography>
         <Typography>Medieinstitutet, Gothenburg</Typography>
         <Typography>Sep 2020 - May 2022 (ongoing)</Typography>
       </div>

@@ -7,7 +7,7 @@ import {
 } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import Title from "./Title";
-import { formatDate } from "../exports";
+import { formatDate, formatName } from "../exports";
 
 function Projects() {
   const theme = useTheme();
@@ -61,8 +61,15 @@ function Projects() {
               isHovered === name ? "5px solid #ff79c6" : "5px solid #bd93f9",
           }}
         >
-          <Typography variant="body1">{full_name}</Typography>
-          <Typography variant="body2">{description}</Typography>
+          <Typography
+            style={{ fontWeight: "bold", marginBottom: ".2rem" }}
+            variant="body1"
+          >
+            {formatName(full_name)}
+          </Typography>
+          <Typography variant="body2" style={{ marginBottom: ".2rem" }}>
+            {description}
+          </Typography>
           <Typography variant="body2">
             Last updated: {formatDate(updated_at)}
           </Typography>

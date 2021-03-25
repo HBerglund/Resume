@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import Title from "./Title";
 import { jobs } from "../exports.js";
-import PersonalExperience from "./PersonalExperience";
+import WorkAndEducation from "./WorkAndEducation";
 import Projects from "./Projects";
 
 function Experience() {
@@ -38,7 +38,7 @@ function Experience() {
       <Title title="Experience" />
       <div className={classes.wrapper}>
         <div className={classes.widthWrapper}>
-          <PersonalExperience />
+          <WorkAndEducation />
         </div>
         <Projects />
       </div>
