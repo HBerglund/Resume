@@ -6,6 +6,7 @@ import {
 } from "@material-ui/core";
 import Title from "./Title";
 import WorkPlaces from "./WorkPlaces";
+import medieinstitutetImg from "../assets/medieinstitutet.png";
 
 function PersonalExperience() {
   const useStyles = makeStyles(() =>
@@ -20,12 +21,20 @@ function PersonalExperience() {
       <WorkPlaces />
       <Divider classes={{ root: classes.divider }} />
       <Title title="Education" subTitle />
-      <div style={{ padding: "0 0 1rem 1rem" }}>
-        <Typography style={{ fontWeight: "bold" }}>
-          Front End Developer
-        </Typography>
-        <Typography>Medieinstitutet, Gothenburg</Typography>
-        <Typography>Sep 2020 - May 2022 (ongoing)</Typography>
+      <div style={{ padding: "0 0 1rem 1rem", display: "flex" }}>
+        <div style={{ paddingRight: "1.5rem" }}>
+          <img
+            src={medieinstitutetImg}
+            style={{ width: "4rem", height: "4rem", borderRadius: "50%" }}
+          />
+        </div>
+        <div>
+          <Typography style={{ fontWeight: "bold" }}>
+            Front End Developer
+          </Typography>
+          <Typography>Medieinstitutet, Gothenburg</Typography>
+          <Typography>Sep 2020 - May 2022 (ongoing)</Typography>
+        </div>
       </div>
       <Divider classes={{ root: classes.divider }} />
       <Title title="Technologies" subTitle />
@@ -34,7 +43,7 @@ function PersonalExperience() {
           HTML, CSS, JavaScript/EcmaScript, Typescript, SQL, Git
         </Typography>
         <Typography>
-          React, Material-UI, Bootstrap, JQuery, P5, TailwindCSS
+          React, Material-UI, Bootstrap, Svelte, P5, TailwindCSS
         </Typography>
       </div>
     </div>

@@ -1,9 +1,13 @@
+import ateaImg from "./assets/atea.jpeg";
+import smallMultiplesImg from "./assets/small-multiples.png";
+
 export const jobs = [
   {
     role: "Project Manager / Digital Producer",
     location: "Small Mutiples - Sydney, Australia",
     period: "Nov 2018 - Aug 2020",
     codeName: "smallMultiples",
+    image: smallMultiplesImg,
     details: [
       {
         text: "• First point of contact for clients",
@@ -34,6 +38,7 @@ export const jobs = [
     location: "Atea Sweden Ab - Vaxjo, Sweden",
     period: "May 2017 – Okt 2018",
     codeName: "atea",
+    image: ateaImg,
     details: [
       {
         text: "• Client implementation",

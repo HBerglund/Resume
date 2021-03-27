@@ -7,6 +7,7 @@ import {
 import profileImg from "../assets/profile.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { useState } from "react";
 
 function ProfileCard() {
   const useStyles = makeStyles(() =>
@@ -33,6 +34,12 @@ function ProfileCard() {
   const linkedInUrl: string =
     "https://linkedin.com/in/herman-berglund-8b8939100";
 
+  const [isHovered, setIsHovered] = useState("");
+
+  const handleHover = (name: string) => {
+    setIsHovered(name);
+  };
+
   return (
     <div className={classes.root}>
       <div className={classes.wrapper}>
@@ -45,19 +52,29 @@ function ProfileCard() {
           <IconButton
             onClick={() => window.open(githubUrl, "_blank")}
             style={{ backgroundColor: "transparent" }}
+            onMouseEnter={() => handleHover("github")}
+            onMouseLeave={() => setIsHovered("")}
           >
             <GitHubIcon
               fontSize="large"
-              style={{ color: "#ff79c6", backgroundColor: "transparent" }}
+              style={{
+                color: isHovered === "github" ? "#ff79c6" : "#bd93f9",
+                backgroundColor: "transparent",
+              }}
             />
           </IconButton>
           <IconButton
             onClick={() => window.open(linkedInUrl, "_blank")}
             style={{ backgroundColor: "transparent" }}
+            onMouseEnter={() => handleHover("linkedin")}
+            onMouseLeave={() => setIsHovered("")}
           >
             <LinkedInIcon
               fontSize="large"
-              style={{ color: "#ff79c6", backgroundColor: "transparent" }}
+              style={{
+                color: isHovered === "linkedin" ? "#ff79c6" : "#bd93f9",
+                backgroundColor: "transparent",
+              }}
             />
           </IconButton>
         </div>
