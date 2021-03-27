@@ -4,6 +4,7 @@ import OneSecond from "./components/OneSecond";
 import AboutMe from "./components/AboutMe";
 import Section from "./components/Section";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 function Home() {
   const useStyles = makeStyles(() =>
@@ -25,6 +26,7 @@ function Home() {
         <Experience />
         <OneSecond />
       </Section>
+      <Contact />
     </div>
   );
 }

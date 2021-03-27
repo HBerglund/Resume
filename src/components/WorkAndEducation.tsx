@@ -6,9 +6,9 @@ import {
   useMediaQuery,
   useTheme,
 } from "@material-ui/core";
-import React from "react";
-import { jobs } from "../exports";
+import React, { useState } from "react";
 import Title from "./Title";
+import WorkPlaces from "./WorkPlaces";
 
 function PersonalExperience() {
   const theme = useTheme();
@@ -24,14 +24,7 @@ function PersonalExperience() {
 
   return (
     <div>
-      <Title title="Work experience" subTitle />
-      {jobs.map(({ role, location, period }) => (
-        <div style={{ padding: "0 0 1rem 1rem" }}>
-          <Typography style={{ fontWeight: "bold" }}>{role}</Typography>
-          <Typography>{location}</Typography>
-          <Typography>{period}</Typography>
-        </div>
-      ))}
+      <WorkPlaces />
       <Divider classes={{ root: classes.divider }} />
       <Title title="Education" subTitle />
       <div style={{ padding: "0 0 1rem 1rem" }}>

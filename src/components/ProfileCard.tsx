@@ -47,11 +47,23 @@ function ProfileCard() {
         </Typography>
         <Typography variant="body1">Aspiring Front End Developer</Typography>
         <div style={{ marginBottom: ".5rem" }}>
-          <IconButton onClick={() => window.open(githubUrl, "_blank")}>
-            <GitHubIcon fontSize="large" style={{ color: "#ff79c6" }} />
+          <IconButton
+            onClick={() => window.open(githubUrl, "_blank")}
+            style={{ backgroundColor: "transparent" }}
+          >
+            <GitHubIcon
+              fontSize="large"
+              style={{ color: "#ff79c6", backgroundColor: "transparent" }}
+            />
           </IconButton>
-          <IconButton onClick={() => window.open(linkedInUrl, "_blank")}>
-            <LinkedInIcon fontSize="large" style={{ color: "#ff79c6" }} />
+          <IconButton
+            onClick={() => window.open(linkedInUrl, "_blank")}
+            style={{ backgroundColor: "transparent" }}
+          >
+            <LinkedInIcon
+              fontSize="large"
+              style={{ color: "#ff79c6", backgroundColor: "transparent" }}
+            />
           </IconButton>
         </div>
       </div>
