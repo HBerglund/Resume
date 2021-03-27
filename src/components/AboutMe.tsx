@@ -1,18 +1,15 @@
 import {
   createStyles,
   makeStyles,
-  Typography,
   useMediaQuery,
   useTheme,
 } from "@material-ui/core";
 import IntroText from "./IntroText";
 import ProfileCard from "./ProfileCard";
-import Title from "./Title";
 
 function AboutMe() {
   const theme = useTheme();
   const matchesMd = useMediaQuery(theme.breakpoints.up("md"));
-  const matchesSm = useMediaQuery(theme.breakpoints.up("sm"));
 
   const useStyles = makeStyles(() =>
     createStyles({

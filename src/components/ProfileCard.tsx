@@ -3,8 +3,6 @@ import {
   IconButton,
   makeStyles,
   Typography,
-  useMediaQuery,
-  useTheme,
 } from "@material-ui/core";
 import profileImg from "../assets/profile.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -29,9 +27,6 @@ function ProfileCard() {
       },
     })
   );
-  const theme = useTheme();
-  const matchesMd = useMediaQuery(theme.breakpoints.up("md"));
-  const matchesSm = useMediaQuery(theme.breakpoints.up("sm"));
   const classes = useStyles();
 
   const githubUrl: string = "https://github.com/hberglund";

@@ -1,19 +1,9 @@
-import {
-  createStyles,
-  makeStyles,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@material-ui/core";
+import { createStyles, makeStyles, Typography } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import Title from "./Title";
 import { formatDate, formatName } from "../exports";
 
 function Projects() {
-  const theme = useTheme();
-  const matchesMd = useMediaQuery(theme.breakpoints.up("md"));
-  const matchesSm = useMediaQuery(theme.breakpoints.up("sm"));
-
   const useStyles = makeStyles(() =>
     createStyles({
       divider: { background: "#bd93f9", marginBottom: "1rem" },

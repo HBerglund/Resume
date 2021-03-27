@@ -1,19 +1,9 @@
-import {
-  createStyles,
-  makeStyles,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@material-ui/core";
+import { createStyles, makeStyles, Typography } from "@material-ui/core";
 import Title from "./Title";
 import mobileIcon from "../assets/mobileIcon.png";
 import Iframe from "react-iframe";
 
 function OneSecond() {
-  const theme = useTheme();
-  const matchesMd = useMediaQuery(theme.breakpoints.up("md"));
-  const matchesSm = useMediaQuery(theme.breakpoints.up("sm"));
-
   const useStyles = makeStyles(() =>
     createStyles({
       root: {
@@ -45,8 +35,8 @@ function OneSecond() {
     <div className={classes.root}>
       <Title title="One second" />
       <Typography>
-        About a year ago, I decided to record one second every day. You can see
-        the result down below:
+        About a year ago, I decided to record one second every day. Please check
+        out the result down below:
       </Typography>
       <div className={classes.mobileWrapper}>
         <img
@@ -55,7 +45,7 @@ function OneSecond() {
           alt="mobile-phone"
         />
         <Iframe
-          url="https://player.vimeo.com/video/528713623?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          url="https://player.vimeo.com/video/528713623?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&portrait=0&byline=0"
           width="360"
           height="640"
           allowFullScreen
