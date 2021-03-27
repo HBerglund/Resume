@@ -40,10 +40,7 @@ export const jobs = [
       },
       {
         text:
-          "• Setting up routines for deliveries involving transportation, pre-delivery configurations such as image installations, asset management and recycling",
-      },
-      {
-        text: "• Running Handover meetings with responsible Account Manager",
+          "• Setting up routines including transportation, pre-delivery configurations such as image installations, asset management and recycling",
       },
       {
         text:
@@ -56,6 +53,9 @@ export const jobs = [
       {
         text:
           "• Tender Work such as price negotiation with distributors, process documentation and making sure we delivered the tender response on time",
+      },
+      {
+        text: "• Running Handover meetings with responsible Account Manager",
       },
       {
         text:
