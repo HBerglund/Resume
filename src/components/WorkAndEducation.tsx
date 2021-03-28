@@ -25,6 +25,7 @@ function PersonalExperience() {
         <div style={{ paddingRight: "1.5rem" }}>
           <img
             src={medieinstitutetImg}
+            alt="logo"
             style={{ width: "4rem", height: "4rem", borderRadius: "50%" }}
           />
         </div>
