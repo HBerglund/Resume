@@ -37,7 +37,7 @@ export const jobs = [
     role: "Project Manager",
     location: "Atea Sweden Ab - Vaxjo, Sweden",
     period: "May 2017 – Okt 2018",
-    codeName: "atea",
+    codeName: "ateaPm",
     image: ateaImg,
     details: [
       {
@@ -65,6 +65,34 @@ export const jobs = [
       {
         text:
           "• Responsible for an internal group more oriented towards implementing global deliveries",
+      },
+    ],
+  },
+  {
+    role: "Customer Service Manager",
+    location: "Atea Sweden Ab - Vaxjo, Sweden",
+    period: "April 2016 – May 2017",
+    codeName: "ateaCsm",
+    image: ateaImg,
+    details: [
+      {
+        text:
+          "• Managing a group of 16 Customer Service Representatives working primarly with incoming queries on chat, e-mail and phone",
+      },
+      {
+        text: "• Running weekly team meetings",
+      },
+      {
+        text: "• Recruiting new staff",
+      },
+      {
+        text: "• Pay reviews",
+      },
+      {
+        text: "• Staff coaching",
+      },
+      {
+        text: "• Salary administration",
       },
     ],
   },

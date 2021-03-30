@@ -6,9 +6,7 @@ import Iframe from "react-iframe";
 function OneSecond() {
   const useStyles = makeStyles(() =>
     createStyles({
-      root: {
-        padding: "2rem 0",
-      },
+      root: {},
       mobileWrapper: {
         display: "flex",
         justifyContent: "center",

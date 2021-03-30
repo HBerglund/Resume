@@ -13,9 +13,9 @@ function IntroText() {
       <Typography paragraph>
         Currently, I am based in Gothenburg, studying at Medieinstitutet, and
         will graduate in May 2022. At Medieinstitutets Front End developer
-        program, we study the fundamentals of HTML5, CSS3, Javascript,
-        Typescript, and much more. Throughout the program, we build applications
-        and websites using popular front-end technologies such as React,
+        program, we study the fundamentals of Typescript, Javascript, HTML5,
+        CSS3 and much more. Throughout the program, we build applications and
+        websites using popular front-end technologies such as React,
         Material-UI, Bootstrap etc.
       </Typography>
       <Typography paragraph>

@@ -41,10 +41,10 @@ function PersonalExperience() {
       <Title title="Technologies" subTitle />
       <div style={{ padding: "0 0 1rem 1rem" }}>
         <Typography>
-          HTML, CSS, JavaScript/EcmaScript, Typescript, SQL, Git
+          TypeScript, JavaScript, Node.Js, SQL, Git, HTML, CSS
         </Typography>
         <Typography>
-          React, Material-UI, Bootstrap, Svelte, P5, TailwindCSS
+          React, Material-UI, Bootstrap, Svelte, P5.js, TailwindCSS
         </Typography>
       </div>
     </div>

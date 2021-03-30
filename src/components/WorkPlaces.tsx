@@ -7,16 +7,33 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
 function WorkPlaces() {
   const [smallMultiples, setSmallMultiples] = useState(false);
-  const [atea, setAtea] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
+  const [ateaPm, setAteaPm] = useState(false);
+  const [ateaCsm, setAteaCsm] = useState(false);
 
-  const handleArrowClick = (name: string) => {
-    if (name === "atea") {
-      setAtea((prev) => !prev);
-    } else {
-      setSmallMultiples((prev) => !prev);
+  const handleArrowClick = (workTitle: string) => {
+    switch (workTitle) {
+      case "smallMultiples":
+        setSmallMultiples((prev) => !prev);
+        break;
+      case "ateaPm":
+        setAteaPm((prev) => !prev);
+        break;
+      case "ateaCsm":
+        setAteaCsm((prev) => !prev);
+        break;
     }
-    setIsClicked((prev) => !prev);
+  };
+
+  const collapse = (workTitle: string) => {
+    switch (workTitle) {
+      case "smallMultiples":
+        return smallMultiples;
+      case "ateaPm":
+        return ateaPm;
+      case "ateaCsm":
+        return ateaCsm;
+    }
+    return false;
   };
 
   return (
@@ -25,7 +42,7 @@ function WorkPlaces() {
       {jobs.map(({ role, location, period, details, codeName, image }) => (
         <div
           style={{
-            padding: "0 0 1rem 1rem",
+            padding: "0 0 1rem 0rem",
             display: "flex",
             alignItems: "center",
           }}
@@ -51,7 +68,7 @@ function WorkPlaces() {
                 style={{ color: "white", padding: "0" }}
                 onClick={() => handleArrowClick(codeName)}
               >
-                {isClicked ? (
+                {collapse(codeName) ? (
                   <KeyboardArrowUpIcon style={{ fontSize: "2rem" }} />
                 ) : (
                   <KeyboardArrowDownIcon style={{ fontSize: "2rem" }} />
@@ -60,7 +77,7 @@ function WorkPlaces() {
             </div>
             <Typography>{location}</Typography>
             <Typography>{period}</Typography>
-            <Collapse in={codeName === "atea" ? atea : smallMultiples}>
+            <Collapse in={collapse(codeName)}>
               {details?.map(({ text }) => (
                 <Typography variant="body1">{text}</Typography>
               ))}
