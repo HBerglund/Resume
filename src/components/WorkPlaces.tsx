@@ -41,6 +41,7 @@ function WorkPlaces() {
       <Title title="Work experience" subTitle />
       {jobs.map(({ role, location, period, details, codeName, image }) => (
         <div
+          key={role}
           style={{
             padding: "0 0 1rem 0rem",
             display: "flex",
@@ -79,7 +80,9 @@ function WorkPlaces() {
             <Typography>{period}</Typography>
             <Collapse in={collapse(codeName)}>
               {details?.map(({ text }) => (
-                <Typography variant="body1">{text}</Typography>
+                <Typography variant="body1" key={text}>
+                  {text}
+                </Typography>
               ))}
             </Collapse>
           </div>
