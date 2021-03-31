@@ -77,7 +77,7 @@ export const jobs = [
     details: [
       {
         text:
-          "• Managing a group of 16 Customer Service Representatives working primarly with incoming queries on chat, e-mail and phone",
+          "• Managing a group of 16 Customer Service Representatives working primarily with incoming queries on chat, e-mail and phone",
       },
       {
         text: "• Running weekly team meetings",
