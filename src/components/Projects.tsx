@@ -1,9 +1,18 @@
-import { createStyles, makeStyles, Typography } from "@material-ui/core";
+import {
+  createStyles,
+  makeStyles,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import Title from "./Title";
 import { formatDate, formatName } from "../exports";
 
 function Projects() {
+  const theme = useTheme();
+  const matchesMd = useMediaQuery(theme.breakpoints.up("md"));
+
   const useStyles = makeStyles(() =>
     createStyles({
       divider: { background: "#bd93f9", marginBottom: "1rem" },
@@ -12,6 +21,9 @@ function Projects() {
         padding: "1rem",
         margin: "0 0 1rem 1rem",
         cursor: "pointer",
+      },
+      projects: {
+        width: matchesMd ? "40%" : "100%",
       },
     })
   );
@@ -40,7 +52,7 @@ function Projects() {
   };
 
   return (
-    <div>
+    <div className={classes.projects}>
       <Title title="Projects" subTitle />
       {repos.map(({ html_url, name, full_name, description, updated_at }) => (
         <div
