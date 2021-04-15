@@ -23,6 +23,11 @@ function Projects() {
       const dataPath = "https://api.github.com/users/HBerglund/repos";
       const response = await fetch(dataPath);
       const result = await response.json();
+      const index = result.findIndex(
+        (repo: any) => repo.full_name === "HBerglund/REST-API-Assignment"
+      );
+      result.splice(index, 1);
+
       setRepos(result);
     }
     githubReposFetch();

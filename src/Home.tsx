@@ -11,7 +11,7 @@ function Home() {
     createStyles({
       root: {
         backgroundColor: theme.palette.primary.main,
-        marginTop: "15rem",
+        marginTop: "10rem",
         color: "white",
       },
     })

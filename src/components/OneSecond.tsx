@@ -33,8 +33,8 @@ function OneSecond() {
     <div className={classes.root}>
       <Title title="One second" />
       <Typography>
-        About a year ago, I decided to record one second every day. You can
-        check out the result down below!
+        About a year ago, I decided to record one second of every day. Check out
+        the video below to get a glimpse of my life!
       </Typography>
       <div className={classes.mobileWrapper}>
         <img
