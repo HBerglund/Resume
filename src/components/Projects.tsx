@@ -39,6 +39,10 @@ function Projects() {
         (repo: any) => repo.full_name === "HBerglund/REST-API-Assignment"
       );
       result.splice(index, 1);
+      const index2 = result.findIndex(
+        (repo: any) => repo.full_name === "HBerglund/piatelli"
+      );
+      result.splice(index2, 1);
 
       setRepos(result);
     }
