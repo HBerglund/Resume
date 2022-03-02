@@ -15,7 +15,7 @@ function Projects() {
 
   const useStyles = makeStyles(() =>
     createStyles({
-      divider: { background: '#bd93f9', marginBottom: '1rem' },
+      divider: { background: '#9393C2', marginBottom: '1rem' },
       repo: {
         backgroundColor: '#44475a',
         padding: '1rem',
@@ -67,9 +67,9 @@ function Projects() {
           onClick={() => window.open(html_url, '_blank')}
           style={{
             border:
-              isHovered === name ? '1px solid #ff79c6' : '1px solid #bd93f9',
+              isHovered === name ? '1px solid #DBDBFF' : '1px solid #9393C2',
             borderBottom:
-              isHovered === name ? '5px solid #ff79c6' : '5px solid #bd93f9',
+              isHovered === name ? '5px solid #DBDBFF' : '5px solid #9393C2',
           }}
         >
           <Typography

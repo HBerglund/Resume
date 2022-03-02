@@ -40,7 +40,7 @@ const SocialButton = ({
         <LinkedInIcon
           fontSize='large'
           style={{
-            color: isHovered === 'linkedin' ? '#ff79c6' : '#bd93f9',
+            color: isHovered === 'linkedin' ? '#DBDBFF' : '#9393C2',
             backgroundColor: 'transparent',
           }}
         />
@@ -48,7 +48,7 @@ const SocialButton = ({
         <GitHubIcon
           fontSize='large'
           style={{
-            color: isHovered === 'github' ? '#ff79c6' : '#bd93f9',
+            color: isHovered === 'github' ? '#DBDBFF' : '#9393C2',
             backgroundColor: 'transparent',
           }}
         />

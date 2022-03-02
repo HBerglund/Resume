@@ -11,7 +11,7 @@ function Title({ title, subTitle }: TitleProps) {
     return (
       <Typography
         variant='h5'
-        style={{ color: '#bd93f9', marginBottom: '1rem' }}
+        style={{ color: '#9393C2', marginBottom: '1rem' }}
       >
         {title}
       </Typography>

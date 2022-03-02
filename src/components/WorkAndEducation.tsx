@@ -3,15 +3,15 @@ import {
   Divider,
   makeStyles,
   Typography,
-} from "@material-ui/core";
-import Title from "./Title";
-import WorkPlaces from "./WorkPlaces";
-import medieinstitutetImg from "../assets/medieinstitutet.png";
+} from '@material-ui/core';
+import Title from './Title';
+import WorkPlaces from './WorkPlaces';
+import medieinstitutetImg from '../assets/medieinstitutet.png';
 
 function PersonalExperience() {
   const useStyles = makeStyles(() =>
     createStyles({
-      divider: { background: "#bd93f9", marginBottom: "1rem" },
+      divider: { background: '#9393C2', marginBottom: '1rem' },
     })
   );
   const classes = useStyles();
@@ -20,17 +20,17 @@ function PersonalExperience() {
     <div>
       <WorkPlaces />
       <Divider classes={{ root: classes.divider }} />
-      <Title title="Education" subTitle />
-      <div style={{ padding: "0 0 1rem 1rem", display: "flex" }}>
-        <div style={{ paddingRight: "1.5rem" }}>
+      <Title title='Education' subTitle />
+      <div style={{ padding: '0 0 1rem 1rem', display: 'flex' }}>
+        <div style={{ paddingRight: '1.5rem' }}>
           <img
             src={medieinstitutetImg}
-            alt="logo"
-            style={{ width: "4rem", height: "4rem", borderRadius: "50%" }}
+            alt='logo'
+            style={{ width: '4rem', height: '4rem', borderRadius: '50%' }}
           />
         </div>
         <div>
-          <Typography style={{ fontWeight: "bold" }}>
+          <Typography style={{ fontWeight: 'bold' }}>
             Front End Developer
           </Typography>
           <Typography>Medieinstitutet, Gothenburg</Typography>
@@ -38,8 +38,8 @@ function PersonalExperience() {
         </div>
       </div>
       <Divider classes={{ root: classes.divider }} />
-      <Title title="Technologies" subTitle />
-      <div style={{ padding: "0 0 1rem 1rem" }}>
+      <Title title='Technologies' subTitle />
+      <div style={{ padding: '0 0 1rem 1rem' }}>
         <Typography>
           TypeScript, JavaScript, Node.Js, SQL, Git, HTML, CSS
         </Typography>
