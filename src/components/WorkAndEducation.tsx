@@ -44,7 +44,8 @@ function PersonalExperience() {
           TypeScript, JavaScript, Node.Js, SQL, Git, HTML, CSS
         </Typography>
         <Typography>
-          React, Material-UI, Bootstrap, Svelte, P5.js, TailwindCSS
+          React, Firebase, Express, NEXT.js, Bootstrap, Svelte, P5.js,
+          TailwindCSS
         </Typography>
       </div>
     </div>
